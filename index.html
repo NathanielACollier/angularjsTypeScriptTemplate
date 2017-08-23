@@ -1,0 +1,28 @@
+<script>
+  "use typescript";
+</script>
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+
+
+  <script src="https://npmcdn.com/systemjs@0.19.40/dist/system.src.js"></script>
+
+  <script>
+    System.import('systemjs.config.js')
+      .then(function () { System.import('main') })
+      .catch(console.error.bind(console));
+  </script>
+    
+    
+  </head>
+
+  <body>
+    <h1>AngularJS Test Application</h1>
+    <hr>
+    <div ng-view></div>
+  </body>
+
+</html>
